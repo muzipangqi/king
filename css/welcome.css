@@ -1,0 +1,110 @@
+@charset "utf-8";
+
+* {
+  font-family: monospace;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, .4) 30%, rgba(240, 246, 218, .65) 95%), url("../images/loginBg.jpg");
+  background-size: cover;
+  background-position: center;
+
+}
+
+header {
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #C8AAAA;
+  font-size: 0.8rem;
+  font-family: monospace;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+header>img {
+  margin: 10px auto 10px 10px;
+}
+
+header>nav>ul>li {
+  display: inline-block;
+  list-style-type: none;
+  padding: 0 1.252rem;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: black;
+  position: relative;
+  transition: .5s ease;
+}
+
+header ul li #active {
+  background: #eee;
+  border: 0;
+  outline: 0;
+  padding: .3em 1.5em;
+  border-radius: 150px;
+}
+
+header nav ul li a:hover {
+  background: #eee;
+  border: 0;
+  outline: 0;
+  padding: .3em 1.5em;
+  border-radius: 150px;
+}
+
+
+.container {
+  position: relative;
+  width: 80vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  line-height: 1.5;
+
+}
+
+.container h1 {
+  color: floralwhite;
+  font-size: 5rem;
+}
+
+.container p {
+  color: floralwhite;
+  margin-top: 5em;
+  font-weight: 120;
+  font-family: monospace;
+
+}
+
+.container a {
+  text-decoration: none;
+  color: hsla(212, 35%, 90%, .8);
+  padding: .5em 1.5em;
+  margin-top: 20px;
+  display: inline-block;
+  border-radius: 50px;
+  background: hsla(212, 15%, 10%, .6);
+  font-size: 2em;
+  transition: .5s ease;
+  font-family: monospace;
+
+}
+
+.container a:hover {
+  background: hsla(212, 15%, 15%, 1);
+  color: #fff;
+}

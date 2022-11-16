@@ -1,0 +1,179 @@
+@charset "utf-8";
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  background-color: #EFE2E2;
+}
+
+header {
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #C8AAAA;
+  font-size: 0.8rem;
+  font-family: monospace;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+header>img {
+  margin: 10px auto 10px 10px;
+}
+
+header>nav>ul>li {
+  display: inline-block;
+  list-style-type: none;
+  padding: 0 1.252rem;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: black;
+  position: relative;
+  transition: .5s ease;
+}
+
+header ul li #active {
+  background: #eee;
+  border: 0;
+  outline: 0;
+  padding: .3em 1.5em;
+  border-radius: 150px;
+}
+
+header nav ul li a:hover {
+  background: #eee;
+  border: 0;
+  outline: 0;
+  padding: .3em 1.5em;
+  border-radius: 150px;
+}
+
+.titleimg {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, .4) 30%, rgba(240, 246, 218, .65) 95%), url("../images/islandBg.png");
+  width: 100%;
+  height: 700px;
+  overflow: hidden;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.titleimg .title {
+  color: floralwhite;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  line-height: 1.5;
+  font-size: 5rem;
+  font-family: monospace;
+
+
+}
+
+
+
+p {
+  text-align: left;
+  margin-top: 50px;
+  font-size: 1.3rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+.center {
+  text-align: center;
+  list-style-position: inside;
+}
+
+ol.center li {
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+ul.center li {
+  text-align: left;
+  font-size: 1.3rem;
+}
+
+.section-information {
+  text-align: center;
+}
+
+.section-quokka {
+  width: 300px;
+  height: 300px;
+  border: 2px dotted black;
+  background-image: url("../images/home1.jpg");
+  background-size: cover;
+  margin: 0 auto;
+}
+
+/* =========== More ============ */
+.title h1 {
+  font-size: 1.8rem;
+  color: black;
+}
+
+.more .title {
+  margin-bottom: 5rem;
+}
+
+.more .title p {
+  margin-top: 2rem;
+}
+
+
+.more .row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+}
+
+.more .row .tours {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 9rem;
+}
+
+.more .col .btn {
+  display: block;
+  text-align: center;
+}
+
+.more .tours h3 {
+  margin: 1rem 0;
+}
+
+.more img {
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .more .row {
+    grid-template-columns: 1fr;
+  }
+}

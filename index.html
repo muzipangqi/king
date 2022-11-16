@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+
+  <title>Login section</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      text-decoration: none;
+      font-family: 'Syne Mono';
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-image: url("./images/loginBg.jpg");
+      background-size: cover;
+    }
+
+    .login {
+      width: 550px;
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(to right bottom,
+          rgba(255, 255, 255, .7),
+          rgba(255, 255, 255, .5),
+          rgba(255, 255, 255, .4));
+      /* background  fuzzy */
+      backdrop-filter: blur(10px);
+      box-shadow: 0 0 20px #EFE2E2;
+      border-radius: 15px;
+    }
+
+    .table {
+      font: 900 40px '';
+      text-align: center;
+      letter-spacing: 5px;
+      color: #3d3d3d;
+      font-family: 'Syne Mono';
+    }
+
+    .box {
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .box input {
+      width: 400px;
+      height: 100%;
+      margin-bottom: 20px;
+      outline: none;
+      border: 0;
+      padding: 10px;
+      background-color: transparent;
+      border-bottom: 3px solid rgb(150, 150, 240);
+      font: 900 16px '';
+      font-family: 'Syne Mono';
+    }
+
+    button {
+      background: darkgray;
+      border: 1px solid rgb(150, 150, 240);
+      border-radius: 50px;
+      color: white;
+      font-size: 200%;
+      font-weight: bold;
+      margin-top: 10px;
+      padding: 5px 10px;
+    }
+
+    button:hover {
+      background: #a784e8;
+      border: darkgray 1px solid;
+    }
+
+    button:active {
+      background: #73c2ff;
+      border: white 1px solid;
+    }
+
+
+    @media(max-width:600px) {
+      input {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="login">
+    <div class="box">
+      <p class="table">Login</p>
+      <br>
+      <input type="text" placeholder="Username">
+      <input type="password" placeholder="Passwords">
+      <br>
+      <a href=""></a>
+      <button type="submit" onclick="window.open('./welcome.html','_self')">Submit</button>
+    </div>
+  </div>
+</body>
+
+</html>
